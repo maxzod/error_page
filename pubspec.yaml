@@ -10,7 +10,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_highlight: ^0.7.0
   font_awesome_flutter: ^9.2.0
+  nations: ^0.0.3
   url_launcher: ^6.0.15
 
 dev_dependencies:

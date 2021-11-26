@@ -1,7 +1,9 @@
 import 'package:error_page/error_page.dart';
 import 'package:flutter/material.dart';
+import 'package:nations/nations.dart';
 
-void main() {
+void main() async {
+  await Nations.boot();
   QueenErrorPage.boot();
   runApp(const MyApp());
 }
@@ -14,9 +16,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: ThemeData.dark(),
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
